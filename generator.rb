@@ -1,7 +1,6 @@
 require 'csv'
+require "time"
 require './invoice.rb'
-
-# p ARGV
 
 case ARGV[0]
 when 'add_time'
