@@ -19,6 +19,12 @@ class InvoiceGenerator
     end
     
     def send_invoice
+      # need customerId
+      # need invoiceNumber
+      # need invoiceDate
+      # need dueDate
+      # need quantity
+      # need amount
       
     end
     
