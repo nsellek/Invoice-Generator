@@ -5,7 +5,7 @@ class InvoiceGenerator
       
       time_entry = [ARGV[1..3], total_time].flatten
       
-      CSV.open("./hours.csv", "a") do |csv|
+      CSV.open("./hours.csv", "a+") do |csv|
         csv << time_entry
       end
     end
