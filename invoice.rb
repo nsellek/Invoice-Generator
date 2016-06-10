@@ -8,6 +8,7 @@ class InvoiceGenerator
       CSV.open("./hours.csv", "a+") do |csv|
         csv << time_entry
       end
+      puts "Time Added"
     end
     
     def total_day_hours
@@ -19,6 +20,15 @@ class InvoiceGenerator
     
     def send_invoice
       
+    end
+    
+    def view_invoice
+      CSV.foreach("./hours.csv") do |row|
+        row.each do |item|
+          print item + " "
+        end
+        puts
+      end
     end
   end
 end
