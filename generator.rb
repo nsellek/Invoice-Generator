@@ -6,5 +6,5 @@ case ARGV[0]
 when 'add_time'
   InvoiceGenerator.add_time
 when 'send_invoice'
-  
+  InvoiceGenerator.send_invoice
 end
